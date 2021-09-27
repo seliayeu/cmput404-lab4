@@ -1,0 +1,8 @@
+1. https://github.com/seliayeu/cmput404-lab4
+2. A startup page telling you the server is running properly on Django 3.1.
+3. You get a Page not found 404 on / and the message "Hello, world. You're at the polls index." on /polls/ 
+4. Migrations are actions that allow you to propogate changes you make to models to your database schema (description from here https://docs.djangoproject.com/en/3.2/topics/migrations/)
+5. You see your username, "Authentication and Authorizaiton" and models for the directory polls created with manage.py startapp. For custom models, you create new schema in your models.py files.
+6. You see "You're looking at question 38." at /polls/38/, "You're looking at the results of question 38." at /polls/38/results and "You're voting on question 38." at polls/38/vote. If you use a string, it doesn't work and to make it work you would replace <int:question_id> with <str:question_id> or <question_id>. 
+7. It makes it harder to change the base directory and move where files are able to be found around as you write more code.
+8. You can reuse code more easily via inheritance and use pre-existing views to speed up development. You should use a generic view if there's one that covers the features you need but you shouldn't if there aren't any that suite your needs.
